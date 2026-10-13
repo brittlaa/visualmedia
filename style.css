@@ -2,7 +2,7 @@
    Global Styles & Exact Color Variables
    ========================================== */
 :root {
-    --bg-pale: #f2f7f1;          /* Soft pale green-tinted background */
+    --bg-pale: #b4e3eb;           /* Soft pale green-tinted background */
     --card-bg: #ffffff;          /* Pure white card backgrounds */
     --text-dark: #243327;        /* Soft dark green text for readability */
     --matcha-green: #81AC72;     /* Matcha green accent */
@@ -24,6 +24,11 @@ body {
     color: var(--text-dark);
     line-height: 1.7;
     text-align: center; /* Everything centered by default */
+}
+
+img {
+    width: 100%;
+    height: 100%
 }
 
 /* ==========================================
