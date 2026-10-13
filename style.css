@@ -1,0 +1,363 @@
+/* ==========================================
+   Global Styles & Exact Color Variables
+   ========================================== */
+:root {
+    --bg-pale: #f2f7f1;          /* Soft pale green-tinted background */
+    --card-bg: #ffffff;          /* Pure white card backgrounds */
+    --text-dark: #243327;        /* Soft dark green text for readability */
+    --matcha-green: #81AC72;     /* Matcha green accent */
+    --coral: #FE6C62;            /* Coral accent */
+    --mustard-yellow: #FFC61A;   /* Mustard yellow accent */
+    --border-color: #d1ded0;     /* Gentle border tone */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    background-color: var(--bg-pale);
+    color: var(--text-dark);
+    line-height: 1.7;
+    text-align: center; /* Everything centered by default */
+}
+
+/* ==========================================
+   Smooth Transitions & Link Hover Effects
+   ========================================== */
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-shadow: -2px 0 0 var(--mustard-yellow), 2px 0 0 var(--coral);
+}
+
+/* ==========================================
+   Chapter Selection Navigation (Top Sticky Bar)
+   ========================================== */
+.chapter-nav {
+    background-color: var(--coral);
+    padding: 1rem 1rem;
+    border-bottom: 2px solid var(--mustard-yellow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.chapter-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.chapter-nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    background: var(--mustard-yellow);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Chapter links background turn matcha green when hovered */
+.chapter-nav a:hover {
+    background: var(--matcha-green) !important;
+    color: #ffffff;
+    text-shadow: none;
+    
+}
+
+/* ==========================================
+   Header and Introduction Section
+   ========================================== */
+.site-header {
+    padding: 4rem 1.5rem 3rem;
+    background: linear-gradient(135deg, #81AC72, #5a824e);
+    color: #ffffff;
+    border-bottom: 5px solid var(--mustard-yellow);
+}
+
+.site-header h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #f7f9f4;
+}
+
+.intro-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+/* ==========================================
+   Media Sections & Horizontal Bars (Coral to Yellow Gradient)
+   ========================================== */
+.media-section {
+    margin: 4rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.section-bar {
+    background: linear-gradient(90deg, var(--coral), var(--mustard-yellow)); /* Gradient from coral to yellow */
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-bar h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section-bar p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #fffdf5;
+    font-weight: 400;
+}
+
+/* ==========================================
+   Rounded Square Tabs & Hover Effects
+   ========================================== */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.tab-card {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 20px; /* Rounded square tab shape */
+    width: 320px;
+    padding: 1.5rem;
+    text-align: left; /* Mini-sections left-aligned as requested */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Hover inflation effect */
+.tab-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(254, 108, 98, 0.2);
+    border-color: var(--coral);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 180px;
+    background: #edf2ec;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #617a63;
+    font-style: italic;
+    margin-bottom: 1rem;
+    border: 1px dashed var(--border-color);
+}
+
+.tab-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.tab-card p {
+    font-size: 0.95rem;
+    color: #4a5c4d;
+}
+
+/* ==========================================
+   Contact Form Styling (Centered Text & Items)
+   ========================================== */
+.contact-section {
+    background: #ffffff;
+    padding: 4rem 1.5rem;
+    max-width: 650px;
+    margin: 3rem auto;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+    text-align: center; /* Section text centered */
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    color: #556658;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form items horizontally */
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center label and input contents */
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: #f9fbf8;
+    color: var(--text-dark);
+    font-size: 1rem;
+    text-align: center; /* Center text inside inputs */
+}
+
+.form-group textarea {
+    text-align: left; /* Standard alignment for message text area */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--matcha-green);
+    box-shadow: 0 0 8px rgba(129, 172, 114, 0.3);
+}
+
+.submit-btn {
+    background: var(--mustard-yellow);
+    color: var(--text-dark);
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.submit-btn:hover {
+    background: var(--coral);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   Footer & Back-to-Top Button Styling
+   ========================================== */
+.site-footer {
+    background: #e8f0e6;
+    padding: 3rem 1rem;
+    border-top: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.site-footer p {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.back-to-top-btn {
+    text-decoration: none;
+    background: var(--matcha-green);
+    color: #ffffff;
+    padding: 0.6rem 1.4rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.back-to-top-btn:hover {
+    background: var(--coral);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   Responsive Media Queries for Mobile/Phones
+   ========================================== */
+@media (max-width: 768px) {
+    .site-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-bar h2 {
+        font-size: 1.8rem;
+    }
+
+    .chapter-nav ul {
+        gap: 1rem;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contact-section {
+        margin: 1.5rem 1rem;
+        padding: 2.5rem 1rem;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beauty in Visual Media</title>
+    <!-- CSS Linked -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- Chapter Selection Navigation (Moved to the top of the screen) -->
+    <nav class="chapter-nav">
+        <ul>
+            <li><a href="#abstraction">Abstraction</a></li>
+            <li><a href="#visual-design">Visual Design</a></li>
+            <li><a href="#movement">Movement</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header and Introduction Section -->
+    <header class="site-header">
+        <h1>The Beauty in Visual Media</h1>
+        <p class="subtitle">In the Eyes of Atticus Brittle</p>
+        <div class="intro-box">
+            <p>Welcome inside the wonderfully chaotic, vibrant corners of my mind! I am Atticus Brittle, a Game and Simulation Major and artist deeply fascinated by how visual media across video games, theatre, and fine arts shapes our perceptions and emotions.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Abstraction -->
+        <section id="abstraction" class="media-section">
+            <!-- First Half: Horizontal Bar Across Screen with Coral to Yellow Gradient -->
+            <div class="section-bar">
+                <h2>Abstraction</h2>
+                <p>To me, this subject is important to most of visual media as abstraction is the process of taking old concepts and making new creations</p>
+            </div>
+            <!-- Second Half: Rounded Square Tabs (Mini-sections) -->
+            <div class="tabs-container">
+                <div class="tab-card">
+                    <div class="image-placeholder">Image Placeholder 1</div>
+                    <h3>Hylics Series by Mason Lindroth</h3>
+                    <p>This is a game that takes abstraction to the extreme using stop-motion and modern items to create a unique world out of reality.</p>
+                </div>
+                <div class="tab-card">
+                    <div class="image-placeholder">Image Placeholder 2</div>
+                    <h3>JoJo's Bizarre Adventure by Hirohiko Araki</h3>
+                    <p>This manga series takes it inspiration from multiple factors of life such as fashion, horror, and generic ways of life and creates an experiences unlike other stories.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Visual Design -->
+        <section id="visual-design" class="media-section">
+            <!-- First Half: Horizontal Bar Across Screen -->
+            <div class="section-bar">
+                <h2>Visual Design</h2>
+                <p>Visual design is not a neccesary thing in most media but it amplifies what you are trying to express within a work of art or story</p>
+            </div>
+            <!-- Second Half: Rounded Square Tabs (Mini-sections) -->
+            <div class="tabs-container">
+                <div class="tab-card">
+                    <div class="image-placeholder">Image Placeholder 1</div>
+                    <h3>Into the Woods by Stephen Sondheim</h3>
+                    <p>This musical uses costume designs to differenciate characters and show their personalities before they start acting.</p>
+                </div>
+                <div class="tab-card">
+                    <div class="image-placeholder">Image Placeholder 2</div>
+                    <h3>Hyper Light Drifter</h3>
+                    <p>This game has no written dialogue so it has to tell the story through the enviroment design and visual effects</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Movement -->
+        <section id="movement" class="media-section">
+            <!-- First Half: Horizontal Bar Across Screen -->
+            <div class="section-bar">
+                <h2>Movement</h2>
+                <p>Analyzing how flow, pacing, and kinetic energy breathe life into static assets, transforming simple animations into expressive storytelling tools.</p>
+            </div>
+            <!-- Second Half: Rounded Square Tabs (Mini-sections) -->
+            <div class="tabs-container">
+                <div class="tab-card">
+                    <div class="image-placeholder">Image Placeholder 1</div>
+                    <h3>Kinetic Rhythm</h3>
+                    <p>A study of character weight and momentum in 2D platformer physics and traditional animation frames.</p>
+                </div>
+                <div class="tab-card">
+                    <div class="image-placeholder">Image Placeholder 2</div>
+                    <h3>Fluid Choreography</h3>
+                    <p>Capturing the dynamic flow of stage actors during high-intensity dramatic sequences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-section">
+            <h2>Let's Connect</h2>
+            <p>Have thoughts, feedback, or want to talk visual media? Leave a message below!</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth (Optional):</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="form-group">
+                    <label for="source">How did you find this site?</label>
+                    <select id="source" name="source">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="video-games">Video Games</option>
+                        <option value="theatre">Theatre</option>
+                        <option value="fine-arts">Fine Arts</option>
+                        <option value="word-of-mouth">Word of Mouth / Peer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Comment / Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer with Back to Top Button -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Atticus Brittle. IMS222 B Course.</p>
+        <a href="#top" class="back-to-top-btn">Back to Top</a>
+    </footer>
+
+</body>
+</html>
